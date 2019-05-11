@@ -17,7 +17,7 @@ echo "download done: $TAG_NAME"
 tar -zxf $TAG_NAME.tar.gz
 mv $GITHUB_OWNER-$GITHUB_REPO-*/* $WORK_DIR
 
-rm deploy.sh $TAG_NAME.tar.gz latest.json
+rm $TAG_NAME.tar.gz latest.json
 
 echo "deploy done"
 
