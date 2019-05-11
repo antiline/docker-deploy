@@ -3,6 +3,7 @@
 echo "start deploy"
 
 mkdir -p $WORK_DIR
+mkdir -p $TEMP_DIR
 
 cd $TEMP_DIR
 
