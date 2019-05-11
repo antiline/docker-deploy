@@ -1,9 +1,9 @@
 # Deploy
 
 ## Essential ENV
-- ACCESS_TOKEN
-- OWNER
-- REPO
+- GITHUB_ACCESS_TOKEN
+- GITHUB_OWNER
+- GITHUB_REPO
 
 ## Optional ENV
 - WORK_DIR
