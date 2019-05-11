@@ -2,7 +2,10 @@
 
 echo "start deploy"
 
+rm -rf $WORK_DIR
 mkdir -p $WORK_DIR
+
+rm -rf $TEMP_DIR
 mkdir -p $TEMP_DIR
 
 cd $TEMP_DIR
