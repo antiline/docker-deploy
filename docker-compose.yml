@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  docker-deploy:
+    build:
+      context: .
+    environment:
+      - ACCESS_TOKEN=
+      - OWNER=
+      - REPO=
+      - WORK_DIR=
