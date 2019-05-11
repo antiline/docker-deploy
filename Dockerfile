@@ -10,7 +10,7 @@ RUN apt update && apt upgrade -y \
 
 RUN pip3 install pipenv
 
-ADD deploy.sh /htdocs/deploy
+ADD deploy.sh /htdocs/deploy/deploy.sh
 
 ENV TEMP_DIR=/tmp/deploy
 ENV WORK_DIR=/htdocs/www
