@@ -2,7 +2,11 @@
 
 echo "start deploy"
 
+rm -rf $WORK_DIR
 mkdir -p $WORK_DIR
+
+rm -rf $TEMP_DIR
+mkdir -p $TEMP_DIR
 
 cd $TEMP_DIR
 
@@ -15,7 +19,8 @@ echo "download done: $TAG_NAME"
 tar -zxf $DOWNLOAD_FILE_NAME
 mv $GITHUB_OWNER-$GITHUB_REPO-*/* $WORK_DIR
 
-rm deploy.sh $DOWNLOAD_FILE_NAME
+rm $DOWNLOAD_FILE_NAME
+
 echo "deploy done"
 
 cd $WORK_DIR
