@@ -11,4 +11,4 @@ ENV GITHUB_ACCESS_TOKEN=
 ENV GITHUB_OWNER=
 ENV GITHUB_REPO=
 
-ENTRYPOINT ["/tmp/deploy/deploy.sh"]
+ENTRYPOINT ["/tmp/deploy/deploy-master.sh"]
