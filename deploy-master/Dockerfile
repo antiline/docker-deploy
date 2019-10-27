@@ -3,7 +3,7 @@ FROM python:3.7
 RUN pip3 install pipenv
 
 RUN mkdir -p /tmp/deploy
-ADD deploy-master/deploy-master.sh /tmp/deploy
+ADD deploy-master.sh /tmp/deploy
 
 ENV TEMP_DIR=/tmp/deploy
 ENV WORK_DIR=/htdocs/www
