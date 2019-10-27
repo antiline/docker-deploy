@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  docker-deploy:
+    build:
+      context: .
+    environment:
+      - GITHUB_ACCESS_TOKEN=
+      - GITHUB_OWNER=
+      - GITHUB_REPO=
+      - WORK_DIR=
+    command:
+      - echo "application start"
